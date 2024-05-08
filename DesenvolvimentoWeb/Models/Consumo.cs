@@ -16,13 +16,12 @@ namespace DesenvolvimentoWeb.Models {
         public string Descricao { get; set; }
 
 
+        [Display(Name = "Data")]
         [Required(ErrorMessage = "Obrigatório informar a Data")]
-        [Display(Name = "Data Atual")]
         public DateTime Data { get; set; }
 
 
         [Required(ErrorMessage = "Obrigatório informar o Valor")]
-        [Display(Name = "Valor")]
         public int Valor { get; set; }
 
 
