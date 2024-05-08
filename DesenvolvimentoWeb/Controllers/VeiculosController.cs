@@ -18,6 +18,29 @@ namespace DesenvolvimentoWeb.Controllers {
 
         }
 
+
+        // Get
+        public IActionResult Create() {
+            return View();
+        }
+
+
+        // Push
+        [HttpPost]
+        public async Task<IActionResult> Create(Veiculo veiculo) {
+
+            if ((ModelState.IsValid)) {
+                    
+                _context.Veiculos.Add(veiculo);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("Index");
+
+            }
+            
+
+            return View(veiculo);
+        }
+
     }
 
 }
