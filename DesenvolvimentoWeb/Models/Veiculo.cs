@@ -30,6 +30,11 @@ namespace DesenvolvimentoWeb.Models {
         public  int AnoModelo { get; set; }
 
 
+
+        public ICollection<Consumo> Consumos { get; set; }
+
+
+
     }
 
 }
