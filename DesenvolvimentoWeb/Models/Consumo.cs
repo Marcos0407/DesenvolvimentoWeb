@@ -21,7 +21,6 @@ namespace DesenvolvimentoWeb.Models {
         public DateTime Data { get; set; }
 
 
-        [Required(ErrorMessage = "Obrigatório informar o Valor")]
         public int Valor { get; set; }
 
 
