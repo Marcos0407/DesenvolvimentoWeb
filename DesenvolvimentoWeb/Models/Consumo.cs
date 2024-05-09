@@ -22,7 +22,7 @@ namespace DesenvolvimentoWeb.Models {
 
 
         public int Valor { get; set; }
-
+        
 
         [Required(ErrorMessage = "Obrigatório informar a Quilometragem")]
         [Display(Name = "Quilomentros")]

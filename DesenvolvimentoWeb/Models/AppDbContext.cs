@@ -10,6 +10,9 @@ namespace DesenvolvimentoWeb.Models {
 
         public DbSet<Consumo> Consumos { get; set; }
 
+
+        public DbSet<Usuario> Usuarios { get; set; }
+
     }
 
 }
